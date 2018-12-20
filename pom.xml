@@ -53,6 +53,10 @@
                         <overlay>
                             <groupId>org.apereo.cas</groupId>
                             <artifactId>cas-server-webapp${app.server}</artifactId>
+                            <excludes>
+                                <exclude>WEB-INF/classes/application.properties</exclude>
+                                <exclude>WEB-INF/classes/services/HTTPSandIMAPS-10000001.json</exclude>
+                            </excludes>
                         </overlay>
                     </overlays>
                 </configuration>
